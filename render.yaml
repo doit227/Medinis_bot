@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: medinis-botas
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: "python main.py"
