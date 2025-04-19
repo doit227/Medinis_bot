@@ -1,7 +1,10 @@
 services:
   - type: web
-    name: medinis-botas
+    name: Medinis_bot
     env: python
-    plan: free
     buildCommand: ""
-    startCommand: "python main.py"
+    startCommand: |
+      python clear_webhook.py && python main.py
+    repo: https://github.com/doit227/Medinis_bot
+    branch: main
+    autoDeploy: true
